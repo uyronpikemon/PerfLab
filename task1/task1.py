@@ -1,15 +1,13 @@
 import sys
 
-
 def _roll(_array, _m):
     for k in range(_m - 1):
         temp = _array[0]
         for j in range(len(_array) - 1):
             _array[j] = _array[j + 1]
         _array[len(_array) - 1] = temp
-
+    
     return _array
-
 
 if __name__ == '__main__':
     n = int(sys.argv[1])
